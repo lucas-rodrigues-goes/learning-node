@@ -1,0 +1,46 @@
+### GET /
+GET http://localhost:8080
+
+### POST /auth/register
+POST http://localhost:8080/auth/register
+Content-Type: application/json
+
+{
+    "username": "lucas@gmail.com",
+    "password": "243io5h3o44534"
+}
+
+### POST /auth/login
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+    "username": "lucas@gmail.com",
+    "password": "243io5h3o44534"
+}
+
+### GET /todos
+GET http://localhost:8080/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzYwNzIzMDAxLCJleHAiOjE3NjA4MDk0MDF9.g6VWknnWq4dZgLf3eJQGBg9sE2uMgPHHF0kJTgN3gjs
+
+### POST /todos
+POST http://localhost:8080/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzYwNzIzMDAxLCJleHAiOjE3NjA4MDk0MDF9.g6VWknnWq4dZgLf3eJQGBg9sE2uMgPHHF0kJTgN3gjs
+Content-Type: application/json
+
+{
+    "task": "Lavar a louça"
+}
+
+### PUT /todos/:id
+PUT http://localhost:8080/todos/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzYwNzIzMDAxLCJleHAiOjE3NjA4MDk0MDF9.g6VWknnWq4dZgLf3eJQGBg9sE2uMgPHHF0kJTgN3gjs
+Content-Type: application/json
+
+{
+    "completed": 1
+}
+
+### DELETE /todos/:id
+DELETE http://localhost:8080/todos/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzYwNzIzMDAxLCJleHAiOjE3NjA4MDk0MDF9.g6VWknnWq4dZgLf3eJQGBg9sE2uMgPHHF0kJTgN3gjs
