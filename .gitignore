@@ -1,0 +1,13 @@
+/simple_backend/node_modules
+/simple_backend/package-lock.json
+
+/todo_app/node_modules
+/todo_app/package-lock.json
+/todo_app/.env
+
+/todo_app_improved/node_modules
+/todo_app_improved/package-lock.json
+/todo_app_improved/.env
+/todo_app/src/generated/prisma
+
+notes.txt
